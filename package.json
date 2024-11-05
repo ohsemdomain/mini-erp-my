@@ -1,0 +1,14 @@
+{
+  "name": "mini-erp-my",
+  "version": "1.0.0",
+  "description": "Mini ERP system for Malaysian companies with employee and payroll management",
+  "scripts": {
+    "frontend:dev": "cd frontend && npm run dev",
+    "backend:dev": "cd backend && npm run dev",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev": "concurrently \"npm run frontend:dev\" \"npm run backend:dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
